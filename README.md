@@ -17,9 +17,9 @@ pnpm add git+https://github.com/openfoodfacts/openfoodfacts-nodejs.git
 #### Example code snippet:
 
 ```ts
-import OpenFoodFacts from "openfoodfacts-nodejs";
+import { OFF } from "openfoodfacts-nodejs";
 
-const client = new OpenFoodFacts();
+const client = new OFF();
 client.getProduct("5000112546415").then((it) => console.log(it));
 ```
 
